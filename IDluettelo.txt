@@ -55,4 +55,6 @@ SHIPS
 302 - CRUISER
 303 - DREADNOUGHT
 304 - STARBASE
+305 - ORBITAL
+306 - MONOLITH
 --------------------------------------

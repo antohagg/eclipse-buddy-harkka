@@ -51,6 +51,13 @@ public class ReputationTrack {
 		}
 	}
 	
+	public ReputationTrack(){
+		maxDiplomats = 5;
+		maxReputationTiles = 4;
+		maxSize = 5;
+		reputationTrackTiles = new ArrayList<ReputationTrackTile>();
+	}
+	
 	public void addDiplomat(String name){
 		if(diplomats < maxDiplomats && reputationTrackTiles.size() < maxSize){
 			reputationTrackTiles.add(new Diplomat(name));

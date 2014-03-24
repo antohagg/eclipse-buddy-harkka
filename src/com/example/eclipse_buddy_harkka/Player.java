@@ -340,9 +340,9 @@ public class Player {
 
 	// GETTERS
 
-	public String getName() {
-		return name;
-	}
+	// public String getName() {
+	// return name;
+	// }
 
 	public int getMoney() {
 		return money;

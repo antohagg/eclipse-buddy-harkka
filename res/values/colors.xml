@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="grey">#FFCCCCCC</color>
+    <color name="medium_grey">#FF808080</color>
+    <color name="black">#FF000000</color>
+    <color name="money_orange">#FFFF8000</color>
+    <color name="science_pink">#FFFF99CC</color>
+    <color name="material_brown">#FF663300</color>
+    
+    
+
+</resources>

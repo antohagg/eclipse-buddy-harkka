@@ -338,4 +338,66 @@ public class Player {
 		reputationTrack.removeDiplomat(diplomatName);
 	}
 
+	// GETTERS
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public int getScience() {
+		return science;
+	}
+
+	public int getMaterial() {
+		return material;
+	}
+
+	public int getTradeFactor() {
+		return tradeFactor;
+	}
+
+	public int getInfluenceDisksLeft() {
+		return influenceDisksLeft;
+	}
+
+	public int getEconomistsLeft() {
+		return economistsLeft;
+	}
+
+	public int getScientistsLeft() {
+		return scientistsLeft;
+	}
+
+	public int getMinersLeft() {
+		return minersLeft;
+	}
+
+	public int getColonyShipsLeft() {
+		return colonyShipsLeft;
+	}
+
+	public Tech[] getMilTechs() {
+		return milTechs;
+	}
+
+	public Tech[] getGridTechs() {
+		return gridTechs;
+	}
+
+	public Tech[] getNanoTechs() {
+		return nanoTechs;
+	}
+
+	public ReputationTrack getReputationTrack() {
+		return reputationTrack;
+	}
+
+	public boolean getPassed() {
+		return passed;
+	}
+
 }

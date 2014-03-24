@@ -9,8 +9,9 @@ public class Tech {
 			"Gauss Shield", "Improved Hull", "Fusion Source", "Positron Computer", "Advanced Economy", "Tachyon Drive", "Antimatter Cannon", "Quantum Grid",
 			"NanoRobots", "Fusion Drive", "Advanced Robotics", "Orbital", "Advanced Labs", "Monolith", "Artifact Key", "Wormhole Generator"};
 	private int[][] costs = {{2, 2}, {4, 3}, {6, 4}, {8, 5}, {10, 6}, {12, 6}, {14, 7}, {16, 8}};
+	private int[] costReduction = {0, 1, 2, 3, 4, 6, 8};
 	
-	public Tech(String name, int techID){
+	public Tech(int techID){
 		this.techID = techID;
 		this.name = names[techID - 201];
 		if(techID <= 208){
@@ -22,6 +23,14 @@ public class Tech {
 		}else if(techID >= 217){
 			cost = costs[techID - 217][0];
 			minCost = costs[techID - 217][1];
+		}
+	}
+	
+	public int getCurrentCost(int previousTechs){
+		if((cost - costReduction[previousTechs]) > minCost){
+			return cost - costReduction[previousTechs];
+		}else{
+			return minCost;
 		}
 	}
 	

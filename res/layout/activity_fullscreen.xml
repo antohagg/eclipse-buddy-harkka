@@ -20,22 +20,41 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33">
+                android:layout_weight="0.50">
 
                 <EditText
                     android:id="@+id/editText1"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:ems="10"
                     android:text="@string/money"
                     android:textColor="@color/money_orange" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned" >
+
+                 
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33">
+                android:layout_weight="0.25">
 
                 <EditText
                     android:id="@+id/editText2"
@@ -45,12 +64,13 @@
                     android:ems="10"
                     android:text="@string/science"
                     android:textColor="@color/science_pink" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33">
+                android:layout_weight="0.25">
 
                 <EditText
                     android:id="@+id/editText3"
